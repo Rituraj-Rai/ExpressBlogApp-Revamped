@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* My custom styles */
+.backdrop {
+    background-color: rgba(0,0,0,0.65);
+    backdrop-filter: blur(4px);
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather Page</title>
+	<link rel="stylesheet" href="/css/myStyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Weather API</h1>
+        <div class="icon">
+            <img src="" alt="icon">
+            <div>
+                <span></span>
+                <p></p>
+            </div>  
+        </div>
+        <h2>Fetching..</h2>
+        <ul>
+            <li>Humidity: </li>
+            <li>Wind speed:</li>
+        </ul>
+        <em>Request from ip: <span id="ip">...</span></em>
+    </section>
+    <script src="/JS/WeatherApp.js"></script>
+<%- include("partials/footer") %>

@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+
+<div class="container mx-auto pt-20">
+    <div class="md:max-w-3xl mx-3 sm:mx-auto">
+        <h5 class="text-4xl">
+            RESTful Blog App
+        </h5>
+    
+        <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit eaque quidem adipisci aperiam rerum dolore, distinctio quod natus! Ex, iusto?</p>
+    </div>
+
+    <% blogs.forEach(function(Blog){  %>
+
+    <div class="flex flex-col items-center mx-3 md:mx-auto my-5 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-3xl hover:bg-gray-100">
+        <img class="object-cover rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="<%= Blog.image %>" alt="">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><%= Blog.title %></h5>
+            <span class="text-sm text-gray-500 mb-1"><%= Blog.created.toDateString() %></span>
+            <p class="mb-3 font-normal text-gray-700"><%= Blog.body.substring(0,70) %>...</p>
+            <a href="/blogs/<%= Blog.id %>" class="inline-flex w-fit px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">Show post</a>
+        </div>
+    </div>
+
+    <%    });  %>
+</div>
+
+<%- include("partials/footer") %>

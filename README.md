@@ -1,3 +1,4 @@
 # ExpressBlogApp-Revamped
 
-### Code & design in progress
+### Revamped Blog App redesigned using Tailwind css
+### follows MVC architecture

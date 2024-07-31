@@ -1,0 +1,31 @@
+html{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section{
+    border: 2px solid lightgray;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: wheat;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+.icon div span{
+    font-size: 2rem;  
+}
+
+p{
+    margin: 0;
+}
+
+section em{
+    color: gray;
+}
+
